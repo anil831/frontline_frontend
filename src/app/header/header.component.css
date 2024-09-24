@@ -1,0 +1,55 @@
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  margin: 0;
+  padding: 15px 20px;
+
+}
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-container input {
+    padding-left: 30px; /* Adjust based on icon size */
+  }
+  
+  .search-container i {
+    position: absolute;
+    left: 10px; /* Space from the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    pointer-events: none; /* Prevent mouse events on the icon */
+  }
+  
+input[type="text"]{
+  border: none;
+  background-color: #e5e5e5;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.fa-search{
+  color: #999;
+}
+
+.right-side{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.icons-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.icons-container .fa{
+  cursor: pointer;
+}

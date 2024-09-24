@@ -1,0 +1,74 @@
+.sidebar {
+    width: 220px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .sidebar-user{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .user-img{
+    vertical-align: middle;
+  }
+  h3{
+    font-size: 1em;
+  }
+  .favorites-recently{
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-weight: 600;
+  }
+  .favorites{
+    opacity: 0.8;
+  }
+
+  .recently{
+    opacity: 0.4;
+  }
+
+  .overview-projects{
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+.overview-projects li {
+
+  color: #d5d5d5;
+}
+
+.dashboard-list-items{
+  list-style-type: none;
+}
+
+.dashboard-list-item,.page-list-item{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 10px 15px !important;
+}
+.list-item{
+  padding: 10px;
+}
+
+.list-item:hover{
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+ul{
+  padding-left: 0;
+}
+ul li{
+  margin-bottom: 5px;
+}
+
+.list-item.dashboard-list-item.active{
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}

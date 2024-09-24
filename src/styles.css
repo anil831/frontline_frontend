@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.app-container {
+    display: flex;
+}
+.content {
+    flex-grow: 1;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+
+}
+  
+a{
+  text-decoration: none !important;
+  color: #333 !important;
+  
+}
+body>div{
+  display: none;
+}

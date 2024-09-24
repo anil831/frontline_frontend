@@ -1,0 +1,56 @@
+<div class="p-3">
+  <div class="notifications mb-3">
+    <h6 class="mb-2">Notifications</h6>
+    <ul>
+      <li
+        class="d-flex gap-3 mb-2 ms-2 align-items-baseline"
+        *ngFor="let notification of notifcations"
+      >
+        <i
+          class="fa"
+          [ngClass]="notification.icon"
+          aria-hidden="true"
+          style="background-color: aquamarine; padding: 5px; border-radius: 25%"
+        ></i>
+        <div>
+          <p>{{ notification.title }}</p>
+          <p style="font-size: 12px; color: #aaa">{{ notification.time }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="activities mb-3">
+    <h6 class="mb-2">Activities</h6>
+    <ul>
+      <li
+        class="d-flex gap-3 mb-2 ms-2 align-items-baseline"
+        *ngFor="let activity of activities"
+      >
+        <i
+          class="fa"
+          [ngClass]="activity.icon"
+          aria-hidden="true"
+          style="background-color: aquamarine; padding: 5px; border-radius: 25%"
+        ></i>
+        <div>
+          <p>{{ activity.title }}</p>
+          <p style="font-size: 12px; color: #aaa">{{ activity.time }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="recent-contacts mb-3">
+    <h6 class="mb-2">Recent Contacts</h6>
+
+    <ul  class="m-2">
+      <li class="d-flex gap-1 mb-2 ms-2 align-items-baseline" *ngFor="let recentContact of recentContacts">
+        <i class="fa" [ngClass]="recentContact.icon"  aria-hidden="true"
+        style="background-color: aquamarine; padding: 5px; border-radius: 25%; margin-right: 10px;"></i>
+        <span>{{recentContact.name}}</span>
+      </li>
+     
+    </ul>
+  </div>
+</div>
